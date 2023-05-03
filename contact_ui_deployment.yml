@@ -16,7 +16,7 @@ spec:
   spec:
     containers:
     - name: contactuicontainer
-      image: ashokit/uiapp
+      image: ashokit/contact_backend_app
       ports:
       - containerPort: 80
 ---
