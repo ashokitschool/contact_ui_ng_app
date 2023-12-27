@@ -21,7 +21,7 @@ RUN npm run build
 FROM nginx:latest
 
 # Copy the build output to replace the default nginx contents.
-COPY --from=build /usr/local/app/dist/contact_ui_ng_app /usr/share/nginx/html
+COPY /dist/contact-ui /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
